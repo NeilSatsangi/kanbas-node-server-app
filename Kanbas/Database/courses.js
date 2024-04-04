@@ -1,0 +1,17 @@
+export default [ { "_id": "CS101", "name": "Discrete Structures", "number": "CS1800", "startDate": "2024-01-10",
+    "endDate": "2024-04-17", "image": "discretestructures.jpg", "description": "Foundations of Computer Science"  },
+  { "_id": "CS102", "name": "Fundies 1", "number": "CS2500", "startDate": "2024-01-10",
+    "endDate": "2024-04-17", "image": "racket.jpg", "description": "Intermediate Principles of Programming"  },
+  { "_id": "CS102", "name": "Fundies 2", "number": "CS2510", "startDate": "2024-01-10",
+    "endDate": "2024-04-17", "image": "Fundies-2.jpg", "description": "Examines Programming with Data Structures"  },
+  { "_id": "CS103", "name": "Object-Oriented Design", "number": "CS3500", "startDate": "2024-01-10",
+    "endDate": "2024-04-17", "image": "ood.jpg", "description": "Introduction to Object-Oriented Design"  },
+  { "_id": "CS104", "name": "Algorithms and Data", "number": "CS3000", "startDate": "2024-01-10",
+    "endDate": "2024-04-17", "image": "algo.jpg", "description": "Algorithms and Data Representations"  },
+  { "_id": "CS105", "name": "Computer Systems", "number": "CS3650", "startDate": "2024-01-10",
+    "endDate": "2024-04-17", "image": "systems.jpg", "description": "Basic Design of Computer Operating Systems"  },
+  { "_id": "CS106", "name": "Foundations of Cybersecurity", "number": "CS2550", "startDate": "2024-01-10",
+    "endDate": "2024-04-17", "image": "cybersecurity.jpg", "description": "Basic Principles and Security Concepts"  }, 
+    { "_id": "CS107", "name": "Web Development", "number": "CS4550", "startDate": "2024-01-10",
+    "endDate": "2024-04-17", "image": "webdevelopment.jpg", "description": "Dynamic, Data Driven, and Interactive Web Development"  } ]
+
