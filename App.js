@@ -23,15 +23,23 @@ const sessionOptions = {
     resave: false,
     saveUninitialized: false,
   };
-  if (process.env.NODE_ENV !== "development") {
+if (process.env.NODE_ENV !== "development") {
     sessionOptions.proxy = true;
     sessionOptions.cookie = {
-      sameSite: "none",
-      secure: true,
-      domain: process.env.HTTP_SERVER_DOMAIN,
+        sameSite: "none",
+        secure: true,
+        domain: process.env.HTTP_SERVER_DOMAIN,
     };
-  }
-  app.use(session(sessionOptions));
+}
+app.use(session(sessionOptions));
+
+// Add the following code to enable CORS
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "https://a6--shiny-queijadas-6fd8c8.netlify.app");
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    next();
+});
   
 CourseRoutes(app);
 app.use(express.json());
