@@ -15,7 +15,7 @@ mongoose.connect(CONNECTION_STRING);
 const app = express();
 app.use(cors({
     credentials: true,
-    origin: process.env.FRONTEND_URL
+    origin: "https://kanbas-node-server-app-a6-91qt.onrender.com",
 
 }));
 const sessionOptions = {
